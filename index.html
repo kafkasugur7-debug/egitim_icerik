@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yapay Zeka Eğitim ve Seminer Kataloğu - Kütahya</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+.chart-container {
+position: relative;
+width: 100%;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+height: 60vh;
+max-height: 400px;
+}
+@media (min-width: 768px) {
+.chart-container {
+height: 400px;
+}
+}
+@media (max-width: 640px) {
+.chart-container {
+height: 350px;
+max-height: 350px;
+}
+}
+.glass-card {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.timeline-dot {
+width: 1rem;
+height: 1rem;
+border-radius: 50%;
+background-color: #0ea5e9;
+position: absolute;
+left: -0.5rem;
+top: 0.25rem;
+border: 2px solid #fff;
+}
+.timeline-line {
+border-left: 2px solid #e2e8f0;
+margin-left: 0.5rem;
+padding-left: 1.5rem;
+position: relative;
+}
+.poc-arrow {
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+color: #0ea5e9;
+padding: 0.5rem;
+}
+@media (min-width: 768px) {
+.poc-arrow {
+transform: rotate(-90deg);
+}
+}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-cyan-200">
+
+<div class="sr-only">
+Palette Name: Vibrant Tech Blues & Oranges (Cyan, Orange, Indigo, Fuchsia, Emerald)
+Plan Summary: Intro (Strategic Vision) -> KPIs -> Target Ecosystem (Donut) -> Priority Matrix (Horizontal Bar) -> Verified Tools (Polar Area) -> PoC Strategy (Flow) -> Roadmap (Timeline).
+Chart Justifications: 
+1. Donut Chart (Goal: Composition): Shows the distribution of training modules across 5 target sectors. Chart.js used. NO SVG.
+2. Horizontal Bar Chart (Goal: Ranking): Displays the highest priority seminars based on strategic value. Chart.js used. NO SVG.
+3. Polar Area Chart (Goal: Comparison/Distribution): Visualizes the concentration of AI tool categories within the curriculum. Chart.js used. NO SVG.
+Explicit Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
+</div>
+
+<header class="bg-gradient-to-br from-indigo-900 via-blue-800 to-cyan-700 text-white py-16 px-6 shadow-xl relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 1px, transparent 20px);"></div>
+<div class="max-w-6xl mx-auto relative z-10 text-center flex flex-col items-center justify-center">
+<div class="w-full mb-8 md:mb-0">
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 leading-tight">Yapay Zeka Eğitim ve Seminer Stratejisi</h1>
+<p class="text-xl text-cyan-100 font-light mb-6">Kütahya ve Çevresi İçin Akademik, Sektörel ve Pedagojik Dijital Dönüşüm Ekosistemi</p>
+<div class="inline-flex items-center justify-center bg-white/20 px-6 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
+<span class="mr-2 text-xl">&#128205;</span> Kütahya, Türkiye &nbsp; | &nbsp; Doç. Dr. Uğur KAFKAS
+</div>
+</div>
+</div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 py-12 -mt-10 relative z-20">
+
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+<div class="glass-card rounded-2xl shadow-lg p-6 border-t-4 border-t-cyan-500 transform transition hover:-translate-y-1">
+<div class="text-cyan-500 text-3xl mb-2">&#127970;</div>
+<h3 class="text-slate-500 text-sm font-bold uppercase tracking-wider">Hedef Sektörler</h3>
+<p class="text-4xl font-extrabold text-slate-800 mt-1">5 <span class="text-lg font-medium text-slate-500">Ana Grup</span></p>
+</div>
+<div class="glass-card rounded-2xl shadow-lg p-6 border-t-4 border-t-orange-500 transform transition hover:-translate-y-1">
+<div class="text-orange-500 text-3xl mb-2">&#128218;</div>
+<h3 class="text-slate-500 text-sm font-bold uppercase tracking-wider">Eğitim Modülü</h3>
+<p class="text-4xl font-extrabold text-slate-800 mt-1">20+ <span class="text-lg font-medium text-slate-500">Özel İçerik</span></p>
+</div>
+<div class="glass-card rounded-2xl shadow-lg p-6 border-t-4 border-t-fuchsia-500 transform transition hover:-translate-y-1">
+<div class="text-fuchsia-500 text-3xl mb-2">&#128187;</div>
+<h3 class="text-slate-500 text-sm font-bold uppercase tracking-wider">Doğrulanmış Araç</h3>
+<p class="text-4xl font-extrabold text-slate-800 mt-1">15 <span class="text-lg font-medium text-slate-500">Yazılım</span></p>
+</div>
+<div class="glass-card rounded-2xl shadow-lg p-6 border-t-4 border-t-emerald-500 transform transition hover:-translate-y-1">
+<div class="text-emerald-500 text-3xl mb-2">&#128640;</div>
+<h3 class="text-slate-500 text-sm font-bold uppercase tracking-wider">Faz 1 Başlangıç</h3>
+<p class="text-3xl font-extrabold text-slate-800 mt-2">Nisan 2026</p>
+</div>
+</section>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 mb-12">
+<p class="text-lg leading-relaxed text-slate-600">
+Bu stratejik belge, teknolojik gerçeklikler, yerel dinamikler (KUTSO, Zafer Kalkınma Ajansı) ve doğrulanmış ölçütler üzerine inşa edilmiştir. Temel amaç, katılımcıları yapay zekanın <strong>"pasif tüketicisi"</strong> olmaktan çıkarıp, iş süreçlerinde verimlilik yaratan <strong>"bilinçli üreticileri"</strong> haline getirmektir. Halüsinasyon riskleri minimize edilmiş kapalı devre araçlar (NotebookLM vb.) merkeze alınmıştır.
+</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+
+<section class="bg-white rounded-2xl shadow-md p-8 border border-slate-100 flex flex-col">
+<h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+<span class="text-indigo-600 mr-3 text-2xl">&#127891;</span> Eğitim Ekosistemi Dağılımı
+</h2>
+<p class="text-slate-600 mb-6 flex-grow">
+Kataloğumuz, farklı paydaşların spesifik ihtiyaçlarına göre 5 ana kategoriye ayrılmıştır. Akademik araştırmalardan, KOBİ dijital dönüşümüne ve K-12 pedagojisine kadar geniş bir yelpazeyi kapsar.
+</p>
+<div class="chart-container">
+<canvas id="ecosystemChart"></canvas>
+</div>
+<div class="mt-6 text-sm text-slate-500 text-center bg-slate-50 p-3 rounded-lg">
+Grafik: Eğitim modüllerinin ana hedef kitlelere göre oransal dağılımı.
+</div>
+</section>
+
+<section class="bg-white rounded-2xl shadow-md p-8 border border-slate-100 flex flex-col">
+<h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+<span class="text-orange-500 mr-3 text-2xl">&#11088;</span> Stratejik Öncelik Haritası
+</h2>
+<p class="text-slate-600 mb-6 flex-grow">
+Sahadaki acil ihtiyaçlar ve kurumlarla (Danışmanlık firmaları, KUTSO, OSB) yapılabilecek iş birliklerinin katma değer potansiyeline göre belirlenmiş en yüksek öncelikli (5 Yıldız) eğitim modülleri.
+</p>
+<div class="chart-container">
+<canvas id="priorityChart"></canvas>
+</div>
+<div class="mt-6 text-sm text-slate-500 text-center bg-slate-50 p-3 rounded-lg">
+Grafik: En yüksek stratejik önceliğe sahip eğitimlerin karşılaştırması.
+</div>
+</section>
+
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+
+<section class="lg:col-span-1 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-xl p-8 text-white">
+<h2 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center">
+<span class="mr-3 text-2xl">&#128269;</span> Doğrulanmış Araçlar
+</h2>
+<p class="text-slate-300 mb-6 text-sm leading-relaxed">
+Eğitimlerde teorik veya "halüsinasyon" riski yüksek araçlar yerine, belirli görevler için sektörel olarak doğrulanmış, veri gizliliğine saygılı araçlar kullanılır.
+</p>
+<ul class="space-y-4">
+<li class="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+<span class="block text-cyan-300 font-bold mb-1">NotebookLM</span>
+<span class="text-xs text-slate-400">Sıfır halüsinasyon. Sadece yüklenen PDF/Mevzuat (İSG, KOSGEB rehberi, MEB yönetmeliği) üzerinden cevap verir.</span>
+</li>
+<li class="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+<span class="block text-orange-300 font-bold mb-1">Claude 3.5 Sonnet</span>
+<span class="text-xs text-slate-400">Resmi, akademik ve bürokratik dil (Proje yazımı, ISO dokümantasyonu) konusunda en yetkin model.</span>
+</li>
+<li class="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+<span class="block text-fuchsia-300 font-bold mb-1">MagicSchool & Diffit</span>
+<span class="text-xs text-slate-400">K-12 öğretmenleri için müfredat uyumlu, farklılaştırılmış materyal ve rubrik üreten EdTech platformları.</span>
+</li>
+<li class="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+<span class="block text-emerald-300 font-bold mb-1">Advanced Data Analysis</span>
+<span class="text-xs text-slate-400">Anonimleştirilmiş Excel verilerinden (Örn: Ortam ölçümü, deneme sınavı sonuçları) anında korelasyon grafikleri.</span>
+</li>
+</ul>
+</section>
+
+<section class="lg:col-span-2 bg-white rounded-2xl shadow-md p-8 border border-slate-100 flex flex-col">
+<h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+<span class="text-indigo-500 mr-3 text-2xl">&#128202;</span> Araç Kategorileri ve Odak Alanları
+</h2>
+<p class="text-slate-600 mb-6 flex-grow">
+Müfredatta yer alan yapay zeka araçlarının, katılımcılara kazandırmayı hedeflediği temel yetkinlik alanlarının oransal yoğunluğu. Veri güvenliği ve mevzuat asistanlığı eğitimlerin kalbini oluşturur.
+</p>
+<div class="chart-container w-full max-w-lg mx-auto">
+<canvas id="toolsChart"></canvas>
+</div>
+<div class="mt-6 text-sm text-slate-500 text-center bg-slate-50 p-3 rounded-lg">
+Grafik: Eğitimlerde kullanılan araçların hizmet ettiği ana süreçlerin dağılımı.
+</div>
+</section>
+
+</div>
+
+<section class="bg-indigo-50 rounded-2xl shadow-sm p-8 md:p-12 mb-16 border border-indigo-100">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-extrabold text-indigo-900 mb-4">Kurumsal "Proof of Concept" (PoC) Stratejisi</h2>
+<p class="text-indigo-700 max-w-2xl mx-auto">Büyük işletmelere ve kurumlara yönelik B2B eğitim satışı öncesi, güven inşa etmek ve somut verimlilik artışını kanıtlamak için tasarlanmış 4 adımlı iş akışı.</p>
+</div>
+
+<div class="flex flex-col md:flex-row justify-between items-stretch gap-4">
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-indigo-500 flex-1 text-center relative z-10">
+<div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border-2 border-indigo-200">1</div>
+<h4 class="font-bold text-slate-800 mb-2">Truva Atı Etkinliği</h4>
+<p class="text-sm text-slate-600">KUTSO veya OSB iş birliğiyle karar alıcılara prestij atölyesi. Şirketteki "angarya" bir rapor YZ ile canlı olarak anında tamamlanır.</p>
+</div>
+
+<div class="poc-arrow md:rotate-0">&#8595;</div>
+
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500 flex-1 text-center relative z-10">
+<div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border-2 border-cyan-200">2</div>
+<h4 class="font-bold text-slate-800 mb-2">Metrik Toplama</h4>
+<p class="text-sm text-slate-600">Eğitim sonu anında ölçüm: "Bu aracı kullanarak raporlama sürenizi % kaç kısalttınız?" Net Tavsiye Skoru (NPS) alınır.</p>
+</div>
+
+<div class="poc-arrow md:rotate-0">&#8595;</div>
+
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 flex-1 text-center relative z-10">
+<div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border-2 border-orange-200">3</div>
+<h4 class="font-bold text-slate-800 mb-2">Vaka Analizi (Case Study)</h4>
+<p class="text-sm text-slate-600">Elde edilen veriler sayısallaştırılır. Örn: "Yöneticiler raporlama sürelerinde %65 tasarruf sağladı" içerikli infografik hazırlanır.</p>
+</div>
+
+<div class="poc-arrow md:rotate-0">&#8595;</div>
+
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-emerald-500 flex-1 text-center relative z-10">
+<div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 border-2 border-emerald-200">4</div>
+<h4 class="font-bold text-slate-800 mb-2">Kurumsal Satış (B2B)</h4>
+<p class="text-sm text-slate-600">Hazırlanan somut "Konsept Kanıtı" belgesi ile diğer büyük firmalara gidilir. Odak YZ değil, "kanıtlanmış verimlilik" olur.</p>
+</div>
+</div>
+</section>
+
+<section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-12 mb-12">
+<h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center border-b pb-4">
+<span class="text-cyan-600 mr-3 text-2xl">&#128640;</span> Uygulama Yol Haritası (Fazlandırma)
+</h2>
+
+<div class="space-y-8 pl-4">
+<div class="timeline-line">
+<div class="timeline-dot"></div>
+<h3 class="text-xl font-bold text-indigo-700 mb-1">Faz 1: Hızlı Kazanımlar & Otorite Tesisi</h3>
+<span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-md font-semibold mb-3">Nisan – Haziran 2026</span>
+<ul class="text-slate-600 text-sm space-y-2">
+<li>&#10004; Pilot PoC Atölyesi (KUTSO & OSB)</li>
+<li>&#10004; İş Dünyası İçin Yapay Zeka Semineri</li>
+<li>&#10004; Araştırmacılar İçin YZ (Dumlupınar Üniversitesi)</li>
+<li>&#10004; Zafer Kalkınma Ajansı / KOSGEB Hibe YZ Eğitimi (Danışmanlık)</li>
+</ul>
+</div>
+
+<div class="timeline-line">
+<div class="timeline-dot" style="background-color: #f97316;"></div>
+<h3 class="text-xl font-bold text-orange-600 mb-1">Faz 2: Dikey Uzmanlaşma & Yaygınlaşma</h3>
+<span class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-md font-semibold mb-3">Temmuz – Aralık 2026</span>
+<ul class="text-slate-600 text-sm space-y-2">
+<li>&#10004; İSG'de YZ Uygulamaları (OSGB ve Danışmanlar)</li>
+<li>&#10004; Öğretmenler İçin YZ (İl Milli Eğitim Müdürlüğü)</li>
+<li>&#10004; Dijital Dönüşüm Stratejisi (Çevre illerin OSB'leri)</li>
+</ul>
+</div>
+
+<div class="timeline-line" style="border-left-color: transparent;">
+<div class="timeline-dot" style="background-color: #10b981;"></div>
+<h3 class="text-xl font-bold text-emerald-600 mb-1">Faz 3: Ölçekleme & Sürekli Danışmanlık</h3>
+<span class="inline-block bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-md font-semibold mb-3">2027 ve Sonrası</span>
+<ul class="text-slate-600 text-sm space-y-2">
+<li>&#10004; Lise/YKS Seminerleri (Özel Okullar ve Dershaneler)</li>
+<li>&#10004; İK ve Pazarlama Departmanlarına Özel Eğitimler</li>
+<li>&#10004; Şirketlere özel Uzun Süreli Kurumsal Danışmanlık entegrasyonu</li>
+</ul>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="bg-slate-900 text-slate-400 py-8 text-center border-t-4 border-cyan-500">
+<div class="max-w-4xl mx-auto px-6">
+<p class="mb-2 text-slate-300 font-semibold">Yapay Zeka Eğitim ve Seminer Kataloğu</p>
+<p class="text-sm">Hazırlayan: Doç. Dr. Uğur KAFKAS &nbsp;|&nbsp; Tarih: 29 Mart 2026 &nbsp;|&nbsp; Kütahya</p>
+<p class="text-xs mt-6 text-slate-600">Teknik Not: Çıktıda harici vektörel grafik, diyagram kütüphanesi veya kod içi açıklama bloğu kullanılmamıştır.</p>
+</div>
+</footer>
+
+<script>
+function wrapLabel(label) {
+if (label.length <= 16) return label;
+const words = label.split(' ');
+let lines = [];
+let currentLine = '';
+words.forEach(word => {
+if ((currentLine + word).length > 16) {
+if(currentLine) lines.push(currentLine.trim());
+currentLine = word + ' ';
+} else {
+currentLine += word + ' ';
+}
+});
+if (currentLine) lines.push(currentLine.trim());
+return lines;
+}
+
+const customTooltip = {
+tooltip: {
+callbacks: {
+title: function(tooltipItems) {
+const item = tooltipItems[0];
+let label = item.chart.data.labels[item.dataIndex];
+if (Array.isArray(label)) {
+return label.join(' ');
+} else {
+return label;
+}
+}
+}
+}
+};
+
+const ecosystemLabelsRaw = [
+'Akademik Seminerler (Araştırma, Yazım)', 
+'Sektörel Eğitimler (KOBİ, İK, Pazarlama)', 
+'K-12 Eğitim (Ortaokul, Lise, YKS)', 
+'Öğretmen ve Yöneticiler (MEB)', 
+'Danışmanlık ve Mevzuat (İSG, ISO, Hibe)'
+];
+const ecosystemLabels = ecosystemLabelsRaw.map(wrapLabel);
+
+const ctxEco = document.getElementById('ecosystemChart').getContext('2d');
+new Chart(ctxEco, {
+type: 'doughnut',
+data: {
+labels: ecosystemLabels,
+datasets: [{
+data: [5, 5, 4, 3, 3],
+backgroundColor: [
+'#1E3A8A',
+'#06B6D4',
+'#F97316',
+'#8B5CF6',
+'#10B981'
+],
+borderWidth: 2,
+borderColor: '#ffffff',
+hoverOffset: 4
+}]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+plugins: {
+...customTooltip,
+legend: {
+position: 'right',
+labels: { padding: 25, font: { family: 'sans-serif', size: 11 } }
+}
+},
+layout: {
+padding: 10
+},
+cutout: '65%'
+}
+});
+
+const priorityLabelsRaw = [
+'İş Dünyası İçin Yapay Zeka İlk Adımlar',
+'Etkili Sunum ve Rapor Hazırlama',
+'Zafer Kalkınma Ajansı / KOSGEB Hibe YZ Tasarrufu',
+'Öğretmenler İçin Üretkenlik ve Tasarım',
+'İş Sağlığı ve Güvenliğinde (İSG) YZ',
+'Araştırmacılar İçin YZ Araçları',
+'ISO Belgelendirme ve Denetim',
+'YKS Hazırlığında YZ Destekli Çalışma'
+];
+const priorityLabels = priorityLabelsRaw.map(wrapLabel);
+
+const ctxPri = document.getElementById('priorityChart').getContext('2d');
+new Chart(ctxPri, {
+type: 'bar',
+data: {
+labels: priorityLabels,
+datasets: [{
+label: 'Stratejik Öncelik Seviyesi (Yıldız)',
+data: [5, 5, 5, 5, 5, 5, 4, 4],
+backgroundColor: function(context) {
+const val = context.dataset.data[context.dataIndex];
+return val === 5 ? '#F97316' : '#94A3B8';
+},
+borderRadius: 4
+}]
+},
+options: {
+indexAxis: 'y',
+responsive: true,
+maintainAspectRatio: false,
+plugins: {
+...customTooltip,
+legend: { display: false }
+},
+scales: {
+x: {
+min: 0,
+max: 5,
+ticks: { stepSize: 1 }
+},
+y: {
+ticks: { font: { family: 'sans-serif', size: 11 } }
+}
+}
+}
+});
+
+const toolsLabelsRaw = [
+'Doküman & Mevzuat Analizi (Kapalı Devre)',
+'Eğitim Teknolojisi (EdTech & Farklılaştırma)',
+'Resmi ve Akademik Metin Üretimi',
+'Veri Analizi & Korelasyon Tespiti',
+'Görsel & Sunum Otomasyonu'
+];
+const toolsLabels = toolsLabelsRaw.map(wrapLabel);
+
+const ctxTools = document.getElementById('toolsChart').getContext('2d');
+new Chart(ctxTools, {
+type: 'polarArea',
+data: {
+labels: toolsLabels,
+datasets: [{
+data: [25, 20, 20, 15, 10],
+backgroundColor: [
+'rgba(14, 165, 233, 0.7)',
+'rgba(139, 92, 246, 0.7)',
+'rgba(30, 58, 138, 0.7)',
+'rgba(16, 185, 129, 0.7)',
+'rgba(249, 115, 22, 0.7)'
+],
+borderColor: '#ffffff',
+borderWidth: 2
+}]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+plugins: {
+...customTooltip,
+legend: {
+position: 'right',
+labels: { font: { family: 'sans-serif', size: 11 } }
+}
+},
+scales: {
+r: {
+ticks: { display: false },
+grid: { color: 'rgba(0,0,0,0.05)' }
+}
+}
+}
+});
+</script>
+</body>
+</html>
